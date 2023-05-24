@@ -17,10 +17,10 @@
 }
 
 .jumping{
-    animation: jumping 5s linear;
+    animation: jump 5s linear;
 }
 
-@keyframes jumping{
+@keyframes jump{
     0%{top: 150px;}
     20%{top: 100px;}
     80%{top: 100px;}
