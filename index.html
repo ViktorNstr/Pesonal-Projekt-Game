@@ -22,7 +22,10 @@
 		<button id="jumpOnlyButton">Jump Only</button>
         <p>Time: <span id="puntos"></span></p>
     </div>
-    <audio id="backgroundSound" src="background.mp3"></audio>
+    <audio controls autoplay muted>
+    <source src="background.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
     <audio id="clickSound" src="click.mp3"></audio>
     <script src="./js/main.js"></script>
 </body>
