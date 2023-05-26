@@ -5,30 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Game</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     
     <div id="gameBoard">
-        <div id="hero"></div>
-        <div id="villain"></div>
-        <div id="youWon" style="display: none;">
-    <h1>You won!</h1>
-    <button onclick="resetGame()">Play again</button>
-    </div>
-    <div id="youLost" style="display: none;">
-    <h1>You lost!</h1>
-    <button onclick="resetGame()">Play again</button>
-</div>
+        <div id="hero"><img src="./images/Hero.png"/></div>
+        <div id="villain"><img src="./images/villain.png"/></div>
+        <div id="youWon">You won!</div>
+        <div id="youLost">You lost!</div>
     </div>
     <div>
         <button id="startButton">Start</button>
         <button id="jumpRightButton">Jump Right</button>
         <button id="jumpLeftButton">Jump Left</button>
-        <p>Score: <span id="puntos"></span></p>
+		<button id="jumpOnlyButton">Jump Only</button>
+        <p>Time: <span id="puntos"></span></p>
     </div>
     <audio id="backgroundSound" src="background.mp3"></audio>
     <audio id="clickSound" src="click.mp3"></audio>
-    <script src="index.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
